@@ -16,7 +16,14 @@ module.exports = {
       targets: ["underflow", "overflow", "assert", "divByZero", "constantCondition", "popEmptyArray", "outOfBounds"],      
       timeout: 200000000
       },
-      viaIR: true
+      viaIR: true,
+      optimizer: {
+           enabled: true,
+            details: {
+            yul: true
+            }
+        }
+        
     }
   }
 };
