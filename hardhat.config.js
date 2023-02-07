@@ -15,7 +15,8 @@ module.exports = {
       solvers: ["z3"],
       targets: ["underflow", "overflow", "assert", "divByZero", "constantCondition", "popEmptyArray", "outOfBounds"],      
       timeout: 200000000
-      } 
+      },
+      viaIR: true
     }
   }
 };
